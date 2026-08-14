@@ -91,7 +91,6 @@ footer p { margin: 0; }
   .conference-list li { display: block; }
   .conference-list time { display: block; margin-top: 2px; }
   .gallery-grid { grid-template-columns: 1fr 1fr; }
-  .gallery-grid figure:last-child { display: none; }
   footer { display: block; }
   footer p + p { margin-top: 5px; }
 }
