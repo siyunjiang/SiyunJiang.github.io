@@ -16,12 +16,14 @@ document.querySelector('#year').textContent = new Date().getFullYear();
 
 const lightbox = document.querySelector('#photo-lightbox');
 const lightboxImage = lightbox.querySelector('img');
+const lightboxLabel = lightbox.querySelector('.lightbox-frame span');
 
 document.querySelectorAll('.gallery-open').forEach((button) => {
   button.addEventListener('click', () => {
     const image = button.querySelector('img');
     lightboxImage.src = image.src;
     lightboxImage.alt = image.alt;
+    lightboxLabel.textContent = button.querySelector('span').textContent;
     lightbox.showModal();
   });
 });
